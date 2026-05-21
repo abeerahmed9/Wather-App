@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weatherly - Modern Weather App</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="https://cdn.coverr.co/videos/coverr-clouds-above-the-city-1564841177814?download=1080p"
+      type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+
+    <div class="weather-card">
+
+      <div class="top">
+
+        <div>
+          <h1 class="logo">☁ Weatherly</h1>
+          <p class="subtitle">Real Time Global Weather</p>
+        </div>
+
+        <div class="search-box">
+
+          <input type="text" id="cityInput" placeholder="Search any city in the world..." />
+
+          <button id="searchBtn">
+            Search
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="main-weather">
+
+        <div class="left">
+
+          <img id="weatherIcon" src="" alt="">
+
+          <h1 id="temperature">--°</h1>
+
+          <h2 id="condition">Cloudy</h2>
+
+          <p id="city">Karachi, PK</p>
+
+          <p id="date"></p>
+
+        </div>
+
+        <div class="right">
+
+          <div class="detail-card">
+            <span>💧 Humidity</span>
+            <h3 id="humidity">--%</h3>
+          </div>
+
+          <div class="detail-card">
+            <span>🌬 Wind Speed</span>
+            <h3 id="wind">-- km/h</h3>
+          </div>
+
+          <div class="detail-card">
+            <span>🌡 Feels Like</span>
+            <h3 id="feelsLike">--°</h3>
+          </div>
+
+          <div class="detail-card">
+            <span>🔽 Pressure</span>
+            <h3 id="pressure">-- hPa</h3>
+          </div>
+
+          <div class="detail-card">
+            <span>👁 Visibility</span>
+            <h3 id="visibility">-- km</h3>
+          </div>
+
+          <div class="detail-card">
+            <span>☀ Sunrise</span>
+            <h3 id="sunrise">--:--</h3>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
